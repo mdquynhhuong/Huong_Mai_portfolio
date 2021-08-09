@@ -1,0 +1,62 @@
+
+.profile {
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	clear: both;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	
+}
+
+.profile-picture {
+	margin-left : 50px;
+	min-width: 300px;
+	min-height: 300px;
+	position: relative;
+	border-radius: 100%;
+}
+.profile-picture img {
+	// Credit to Marketlify for this animation https://themeforest.net/item/tokyo-personal-portfolio-template/31647361
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: cover;
+	animation: morph 8s ease-in-out infinite 1s;
+	background-blend-mode: multiply;
+	-webkit-box-shadow: inset 0px 0px 0px 9px rgba(255,255,255,.3);
+    -moz-box-shadow: inset 0px 0px 0px 9px rgba(255,255,255,.3);
+    box-shadow: inset 0px 0px 0px 9px rgba(255,255,255,.3);
+}
+@keyframes morph {
+	0% {
+		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+   	}
+	50% {
+		border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+   }
+	100% {
+		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+   }
+}
+// End of animation for profile picture
+
+.profile-info {
+	text-align: center;
+	margin: 0 auto;
+	margin-top : 50px;
+}
+.profile-info h2 {
+	font-size: 50px;
+}
+.social-media ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}

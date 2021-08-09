@@ -1,0 +1,112 @@
+@import "./variable";
+// Generic Setup
+html {
+    font-size: 125%;
+	font-family: $bodyFont;
+	font-weight: 200;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: rgb(37, 36, 36);
+}
+
+h1, h2 {
+	font-family: $bodyFont;
+	font-size: $headerFontSize;
+}
+// Left Part Section
+.leftpart{
+	width: 450px;
+	height: 100vh;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	z-index: 10;
+	padding: 0px 100px;
+	background-color: #fff;
+}
+.leftpart_info {
+	margin-left : auto;
+	margin-right: auto;
+	text-align: center;
+
+}
+
+.menu ul {
+	margin: 20px 0;
+	text-align: center;
+}
+.menu li {
+	margin: 15px 0;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.menu li:hover,
+.menu li:focus{ 
+	box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+	transform: translateY(-0.25em);
+	cursor: pointer;
+}
+
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.copyright {
+	margin-top: 50px;
+}
+
+.copyright a {
+	color: black;
+	background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+.copyright a:hover,
+.copyright a:focus {
+	cursor:pointer;
+	color: transparent;
+	transition: 500ms ease;
+}
+// Right Part Section
+.rightpart{
+	width: 100%;
+	min-height: 100vh;
+	float: left;
+	position: relative;
+	background-color: #f8f8f8;
+	padding-left: 450px;
+}
+
+.tokyo_tm_section{
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+	padding-left: 450px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 0;
+    transform: translate3d(5%, 0, 0);
+    transition: transform .3s ease .3s,opacity 0s ease .3s;
+	z-index: -1;
+}
+.tokyo_tm_section.active{
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+	z-index: 5;
+}
