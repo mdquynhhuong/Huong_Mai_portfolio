@@ -385,6 +385,7 @@ h1, h2 {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  margin: 0 auto;
 }
 
 .profile-picture {
@@ -393,6 +394,7 @@ h1, h2 {
   min-height: 300px;
   position: relative;
   border-radius: 100%;
+  margin-right: 80px;
 }
 
 .profile-picture img {
@@ -436,15 +438,17 @@ h1, h2 {
 }
 .profile-info {
   text-align: center;
-  margin: 0 auto;
+  margin-left: 50px;
   margin-top: 50px;
+  position: relative;
 }
 
 .profile-info h2 {
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .social-media ul {
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,4 +458,37 @@ h1, h2 {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.social-media li {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.social-media li:hover,
+.social-media li:focus {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+.aboutpage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  clear: both;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin: 0 auto;
 }
