@@ -1,0 +1,63 @@
+.projectpage-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    padding: 50px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.project-image img {
+    border-radius: 10px;
+    height: auto;
+    // width: 150vw;
+}
+
+.project-info {
+    width: 50vw;
+    margin-left: 50px;
+}
+
+.project-info h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.stacks {
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.stacks p{
+    padding: 7px;
+    margin: 0 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+.project-description {
+    text-align: center;
+}
+.livelinks {
+    display: flex;
+    justify-content: center;
+}
+.livelinks a {
+    margin: 0 20px 0 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.livelinks a:hover,
+.livelinks a:focus {
+
+    background-color: rgba(184, 180, 180, 0.699);
+    
+}

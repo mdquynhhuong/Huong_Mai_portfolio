@@ -1,3 +1,4 @@
+// Description of Huong Mai
 .aboutpage {
     display: flex;
     width: 100%;
@@ -8,4 +9,59 @@
     justify-content: center;
     position: relative;
     margin: 0 auto;
+    text-align: center;
+}
+.about-image img {
+    width: 80%;
+}
+.description-info {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+.description-info p {
+    font-size: 1rem;
+}
+.description-info button {
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+.description-info button:hover,
+.description-info button:focus {
+    cursor: pointer;
+	box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+	transform: translateY(-0.25em);
+}
+
+// Technical Skills
+.stack-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.eachSkill {
+    flex: 1 1 30%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    // height: 100px;
+}
+
+.iconName {
+    font-weight: 700;
+    text-align:center;
+    opacity: 0;
+}
+.eachSkill i {
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.stack-skills .eachSkill:hover .iconName,
+.eachSkill:hover i {
+    transform: scale(1.2);
+    transition: all 0.4s;
+    opacity: 1;
 }
