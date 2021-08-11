@@ -12,6 +12,23 @@
 </head>
 <body>
     <main>
+            <!-- Mobile Menu -->
+            <div class="mobile-menu">
+                <div class="mobile-menu-inner">
+                    <div class="logo">
+                        <a href="#home"><img src="./assets/PNG/LOGO_blk-SUBMARK.png" alt="Huong Mai Logo"></a>
+                    </div>
+                    <nav class="mobile-menu-icons">
+                        <ul>
+                            <li><a href="#home"><i class="fas fa-home"></i></a></li>
+                            <li><a href="#about"><i class="fas fa-user-alt"></i></a></li>
+                            <li><a href="#projects"><i class="fas fa-briefcase"></i></a></li>
+                            <li><a href="#contact"><i class="fas fa-envelope"></i></a></li>
+    
+                        </ul>
+                    </nav>
+                </div>
+            </div>
             <!-- LEFT PART SECTION -->
             <div class="leftpart">
                 <div class="leftpart_info">
@@ -38,7 +55,7 @@
                 <div class="rightpart_info">
 
                     <!-- HOME PAGE SECTION -->
-                    <div id="home" class="homepage tokyo-tm-section active">
+                    <div id="home" class="homepage">
                         <div class="profile">
                             <div class="profile-picture">
                                 <!-- Adding profile picture-->
@@ -50,9 +67,10 @@
                                 <p>Front-end Web Developer</p>
                                 <div class="social-media">
                                     <ul>
+                                        <li><a href="mailto:mdquynhhuong@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                         <li><a href="https://www.linkedin.com/in/huong-mai"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="https://github.com/mdquynhhuong"><i class="fab fa-github" aria-hidden="true"></i></a></li>
                                         <li><a href="https://twitter.com/HuongMcancode"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://github.com/mdquynhhuong"><i class="fab fa-github" aria-hidden="true"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -60,21 +78,22 @@
                 
                     <!-- ABOUT PAGE / SKILLS PAGE -->
 
-                    <section id="about" class="aboutpage tokyo-tm-section">
-                        <div class="wrapper">
-                            <div class="about_image">
-                                <!-- Adding the Huong Mai Logo file -->
-                                <img src="./assets/PNG/LOGO_blk-ALTERNATE.png" alt="banner of Huong Mai">
-                            </div>
-                            <div class="description">
+                    <section id="about" class="aboutpage">
+                            <div class="description wrapper">
                                 <div class="description-info">
-                                    <p>Hello hello, I am a researcher turned front-end web developer based in Waterloo, Ontario. I love <span>organized code and minimal/clean design</span> for websites. I am looking to join a collaborative and unique team and continue to expand my front-end skills. </p>
-                                    <p>With experience in customer-oriented environment, I love accessible and user-friendly with great user interface websites. I love to communicate, and solve problems/challenges. </p>
-                                    <p>When I'm not coding or doing research, I will spend most of my time playing with my Irish Doodle Marshal or try new Vietnamese recipes.</p>
-                                    <button><a href="./assets/Huong_Mai_Resume_01082021.pdf"> Hire Me</a></button>
+                                    <div class="about-image">
+                                        <!-- Adding the Huong Mai Logo file -->
+                                        <img src="./assets/PNG/LOGO_blk-SUBMARK.png" alt="banner of Huong Mai">
+                                    </div>
+                                    <div class="description-text">
+                                        <p>Hello hello, I am a researcher turned front-end web developer based in Waterloo, Ontario. I love <span>organized code and minimal/clean design</span> for websites. I am looking to join a collaborative and unique team and to continue expanding my front-end skills. </p>
+                                        <p>With strong experiences in customer-oriented environment, I understand the needs and wants from users experiences and interfaces. Therefore, I love accessible and user-friendly websites. </p>
+                                        <p>I love to communicate and solve problems. When I'm not coding or doing research, I will spend most of my time playing with my Irish Doodle Marshal or try new Vietnamese recipes.</p>
+                                        <button><a href="./assets/Huong_Mai_Resume_01082021.pdf"> Hire Me</a></button>
+                                    </div>
                                 </div>
                                 <div class="skills">
-                                    <h3>My Technical skills </h3>
+                                    <h3>My Technical Skills </h3>
                                     <div class="stack-skills">
                                         <div class="eachSkill">
                                             <i class="devicon-html5-plain colored"></i>
@@ -129,16 +148,13 @@
 
                     <!-- PROJECTS PAGE -->
 
-                    <div id="projects" class="projectpage tokyo-tm-section">
+                    <div id="projects" class="projectpage">
                         <div class="projectpage-container wrapper">
                             <!-- Quick Flick Pix Project -->
                             <section class="project-container wrapper">
-                                <div class="project-image">
-                                    <!-- adding a screen shot of the project -->
-                                    <img src="./assets/PNG/quickflickpix_snapshot.png" alt="ScreenShot of Quick Flick Pix Project">
-                                </div>
                                 <div class="project-info">
-                                    <h2>Quick Flick Pix</h2>
+                                    <img src="./assets/PNG/quickflickpix_snapshot.png" alt="ScreenShot of Quick Flick Pix Project">
+                                    <h2><span>Q</span>&nbsp;&nbsp; uick <span>F</span>&nbsp;&nbsp; lick <span>P</span>&nbsp;&nbsp; ix</h2>
                                     <div class="stacks">
                                         <p>React</p>
                                         <p>Firebase</p>
@@ -146,22 +162,19 @@
                                         <p>SASS</p>
                                     </div>
                                     <div class="project-description">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia molestias perspiciatis consequatur nostrum provident beatae suscipit dolore doloribus. Quidem beatae vitae quo a et obcaecati voluptatibus minima. Voluptatum, dolores quas?Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde voluptas numquam sapiente. Quaerat culpa quae ex voluptate. Nobis ipsam corporis blanditiis amet exercitationem, nostrum maxime repellat sint natus ullam.</p>
+                                        <p>Quick Flick Pix is a react app to help users adding movies to their lists. Users can customize the lists as also movies in each list. With a small form in each list, users will be provided a random movie with chosen genre and time-period. </p>
                                     </div>
                                     <ul class="livelinks">
-                                        <li><a href="#">Live Link</a></li>
-                                        <li><a href="#">View on Github</a></li>
+                                        <li><a href="https://quickflickpix.netlify.app/">Live Link</a></li>
+                                        <li><a href="https://github.com/cohort35-project4-group5/quick-flick-picker">View on Github</a></li>
                                     </ul>
                                 </div>
                             </section>
                             <!-- Movie Night -->
                             <section class="project-container wrapper">
-                                <div class="project-image">
-                                    <!-- adding a screen shot of the project -->
-                                    <img src="./assets/PNG/moviesnight_snapshot.png" alt="ScreenShot of Movie Night Project">
-                                </div>
                                 <div class="project-info">
-                                    <h2>Movie Night</h2>
+                                    <img src="./assets/PNG/moviesnight_snapshot.png" alt="ScreenShot of Movie Night Project">
+                                    <h2><span>M</span>&nbsp;&nbsp;&nbsp; ovie <span>N</span> &nbsp;&nbsp; ight</h2>
                                     <div class="stacks">
                                         <p>JavaScript</p>
                                         <p>APIs</p>
@@ -169,23 +182,20 @@
                                         <p>Git/GitHub</p>
                                     </div>
                                     <div class="project-description">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia molestias perspiciatis consequatur nostrum provident beatae suscipit dolore doloribus. Quidem beatae vitae quo a et obcaecati voluptatibus minima. Voluptatum, dolores quas?Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde voluptas numquam sapiente. Quaerat culpa quae ex voluptate. Nobis ipsam corporis blanditiis amet exercitationem, nostrum maxime repellat sint natus ullam.</p>
+                                        <p>Ever wonder what to watch with your partner tonight ? No worries, "Movies Night" website got you! Just choose a genre that you feel like and you can decide which top 3 rated movies to watch. You can also see some other rated movies in the same genre. </p>
                                     </div>
                                     <ul class="livelinks">
-                                        <li><a href="#">Live Link </a></li>
-                                        <li><a href="#">View on Github</a></li>
+                                        <li><a href="https://watchnights.netlify.app/">Live Link </a></li>
+                                        <li><a href="https://github.com/huongMaiRichardGayleProject2/Movies-Night">View on Github</a></li>
                                     </ul>
                                 </div>
                             </section>                
 
                             <!-- Maternity app -->
                             <section class="project-container wrapper">
-                                <div class="project-image">
-                                    <!-- adding a screen shot of the project -->
-                                    <img src="./assets/PNG/maternity_snapshot.PNG" alt="ScreenShot of Maternity App Project">
-                                </div>
                                 <div class="project-info">
-                                    <h2>Maternity Bag</h2>
+                                    <img src="./assets/PNG/maternity_snapshot.PNG" alt="ScreenShot of Maternity App Project">
+                                    <h2><span>M</span>&nbsp;&nbsp;&nbsp; aternity <span>B</span>&nbsp;&nbsp; ag</h2>
                                     <div class="stacks">
                                         <p>JavaScript</p>
                                         <p>Firebase</p>
@@ -193,11 +203,11 @@
                                         <p>Git/GitHub</p>
                                     </div>
                                     <div class="project-description">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia molestias perspiciatis consequatur nostrum provident beatae suscipit dolore doloribus. Quidem beatae vitae quo a et obcaecati voluptatibus minima. Voluptatum, dolores quas?Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde voluptas numquam sapiente. Quaerat culpa quae ex voluptate. Nobis ipsam corporis blanditiis amet exercitationem, nostrum maxime repellat sint natus ullam.</p>
+                                        <p>Pregnant woman always forgets something for her hospital bag. This website is created to remind them what she has put in her bag and what not. She can also delete the item when it is not needed. Pretty cool eh!? </p>
                                     </div>
                                     <ul class="livelinks">
-                                        <li><a href="#">Live Link</a></li>
-                                        <li><a href="#">View on Github</a></li>
+                                        <li><a href="https://huongmai-maternity-app.netlify.app/">Live Link</a></li>
+                                        <li><a href="https://github.com/mdquynhhuong/maternity-app">View on Github</a></li>
                                     </ul>
                                 </div>
                             </section>
@@ -205,32 +215,22 @@
                     </div>
 
                     <!-- CONTACT PAGE -->
-                    <section id="contact" class="contactme tokyo-tm-section">
-                        <div class="contact-container">
-                            <h2>Shoot me a message :) </h2>
-                            <p>If you want to hire me, ask me a question, or just simply want to say hi, please feel free to send me a message here of contact me through social media :D </p>
-                            <div class="form-social">
-                                <form class="formPosition" action="" >
-                                    <fieldset>
-                                        <label for="name" class="visuallyHidden">Name</label>
-                                        <input type="text" placeholder="Name" id="name">
-                            
-                                        <label for="email" class="visuallyHidden">Email</label>
-                                        <input type="email" placeholder="Email address"  id="email">
-                                        
-                                        <label for="comment" class="visuallyHidden">Message</label>
-                                        <textarea name="comment" placeholder ="Message" id="comment" cols="30" rows="10"></textarea>
-                                    </fieldset>
-                            
-                                    <input type="submit" value="Send Message">
-                                </form>
+                    <section id="contact" class="contact-page">
+                        <div class="contact-container wrapper">
+                            <div class="form-intro">
+                                <h2>Contact Me</h2>
+                                <p>Please feel free to send a message through my email or social media links belows for job opportunities or you just want to say hi to Marshal the Dood! </p>
                                 <div class="social-links">
                                     <ul>
+                                        <li><a href="mailto:mdquynhhuong@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
                                         <li><a href="https://www.linkedin.com/in/huong-mai"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="https://github.com/mdquynhhuong"><i class="fab fa-github" aria-hidden="true"></i></a></li>
                                         <li><a href="https://twitter.com/HuongMcancode"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://github.com/mdquynhhuong"><i class="fab fa-github" aria-hidden="true"></i></a></li>
                                     </ul>
                                 </div>
+                            </div>
+                            <div class="imageOfMarshal">
+                                <img src="./assets/PNG/Marshaldood.jpg" alt="Image of Marshal the dog">
                             </div>
                         </div>
                     </section>

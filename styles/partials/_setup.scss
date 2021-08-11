@@ -11,4 +11,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     width: 90%;
     margin: 0 auto;
     max-width: 1080px;
-    }
+}
+.visuallyHidden {
+    display: none;
+}

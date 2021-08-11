@@ -1,0 +1,51 @@
+
+@media (max-width: 750px) {
+    .about-image {
+        display: none;
+    }
+    .projectpage-container {
+        margin: 0;
+    }
+    .project-container {
+        border: none;
+        margin: 0;
+        padding: 20px 0;
+        border-top: 2px solid black;
+    }
+    .project-info {
+        font-size: 20px;
+    }
+    .project-info h2 {
+        border: none;
+        font-size: 30px;
+    }
+    .contact-page {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 1200px) {
+    .mobile-menu {
+         display: block;
+
+    }
+    .leftpart {
+        display:none;
+    }
+    .rightpart {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .project-info {
+        margin: 0 auto;
+    }
+    .profile, .contact-page {
+        min-height: fit-content;
+    }
+}
+
+@media (max-width: 1352px) {
+    .profile {
+        display: flex;
+        flex-direction: column;
+    }
+}

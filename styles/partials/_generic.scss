@@ -24,9 +24,36 @@ h1, h2 {
 	font-family: $bodyFont;
 	font-size: $headerFontSize;
 }
+// Mobie Part Section 
+.mobile-menu {
+	display: none;
+}
+.mobile-menu-inner {
+	display: flex;
+	width: 100%;
+	clear: both;
+	justify-content: space-between;
+	align-items: center;
+}
+.mobile-menu img {
+	margin: 20px;
+}
+.mobile-menu-icons ul{
+	display: flex;
+	justify-content: space-between;
+}
+.mobile-menu-icons li {
+	margin: 0 20px;
+}
+.mobile-menu-icons li:hover,
+.mobile-menu-icons li:focus{ 
+	box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+	transform: translateY(-0.25em);
+	cursor: pointer;
+}
 // Left Part Section
 .leftpart{
-	width: 400px;
+	width: 450px;
 	height: 100vh;
 	position: fixed;
 	display: flex;
@@ -91,22 +118,3 @@ h1, h2 {
 	padding-left: 450px;
 }
 
-.tokyo_tm_section{
-	position: fixed;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-	padding-left: 450px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    opacity: 0;
-    transform: translate3d(5%, 0, 0);
-    transition: transform .3s ease .3s,opacity 0s ease .3s;
-	z-index: -1;
-}
-.tokyo_tm_section.active{
-	opacity: 1;
-	transform: translate3d(0, 0, 0);
-	z-index: 5;
-}
