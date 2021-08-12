@@ -19,11 +19,12 @@
 }
 
 @media (max-width: 750px) {
+
     .about-image {
         display: none;
     }
     .projectpage-container {
-        margin: 0;
+        margin: 0 auto;
     }
     .project-container {
         border: none;
