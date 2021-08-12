@@ -1,3 +1,8 @@
+@media (max-width:510px) {
+    .project-info p , .project-info a {
+        font-size: 15px;
+    }
+}
 
 @media (max-width: 750px) {
     .about-image {
@@ -21,6 +26,17 @@
     }
     .contact-page {
         margin-top: 50px;
+    }
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-intro {
+        text-align: center;
+    }
+    .social-links ul {
+        justify-content: space-between;
     }
 }
 @media (max-width: 1200px) {
