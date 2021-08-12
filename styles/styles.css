@@ -289,6 +289,7 @@ h1, h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 50px;
 }
 
 .mobile-menu img {
@@ -306,6 +307,9 @@ h1, h2 {
 
 .mobile-menu-icons li {
   margin: 0 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 7px;
 }
 
 .mobile-menu-icons li:hover,
@@ -408,6 +412,8 @@ h1, h2 {
           justify-content: center;
   position: relative;
   margin: 0 auto;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
 }
 
 .profile-picture {
@@ -517,7 +523,7 @@ h1, h2 {
 }
 
 .description-info {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   padding-bottom: 20px;
   border-bottom: 1px solid black;
   display: -webkit-box;
@@ -538,6 +544,11 @@ h1, h2 {
   font-size: 1rem;
 }
 
+.description-text em {
+  font-weight: 800;
+  font-style: italic;
+}
+
 .description-info button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -555,6 +566,20 @@ h1, h2 {
           transform: translateY(-0.25em);
 }
 
+.skills h3 {
+  color: black;
+  background: -webkit-gradient(linear, left top, right top, from(red), color-stop(orange), color-stop(yellow), color-stop(green), color-stop(blue), to(purple));
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.skills h3:hover {
+  color: transparent;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
 .stack-skills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,6 +591,7 @@ h1, h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid black;
 }
 
 .eachSkill {
@@ -600,6 +626,10 @@ h1, h2 {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   opacity: 1;
+}
+
+.projectpage {
+  border-bottom: 1px solid black;
 }
 
 .projectpage-container {
@@ -847,10 +877,24 @@ h1, h2 {
 }
 
 .imageOfMarshal img {
-  border: 2px solid black;
   border-radius: 20px;
+  max-width: 100%;
 }
 
+@media (max-width: 400px) {
+  .logo {
+    display: none;
+  }
+
+  .mobile-menu-icons ul {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .form-intro {
+    margin: 0 auto 10px;
+  }
+}
 @media (max-width: 510px) {
   .project-info p, .project-info a {
     font-size: 15px;
@@ -900,6 +944,7 @@ h1, h2 {
 
   .form-intro {
     text-align: center;
+    margin: 10px 0;
   }
 
   .social-links ul {
@@ -907,10 +952,47 @@ h1, h2 {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+
+  .stacks {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .stacks p {
+    margin: 10px;
+  }
+
+  .livelinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .livelinks li {
+    margin: 10px;
+  }
 }
 @media (max-width: 1200px) {
   .mobile-menu {
     display: block;
+    position: fixed;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .mobile-menu-inner {
+    background-color: rgba(255, 255, 255, 0.788);
   }
 
   .leftpart {
@@ -918,8 +1000,12 @@ h1, h2 {
   }
 
   .rightpart {
-    margin: 0 auto;
+    margin: 70px auto;
     padding: 0;
+  }
+
+  .profile-info {
+    margin: 40px 0 0 0;
   }
 
   .project-info {

@@ -19,7 +19,6 @@
     
 }
 .form-intro {
-    // width: 35%;
     text-align: left;
     margin-bottom: 30px;
     display: flex;
@@ -53,8 +52,8 @@
 	transform: translateY(-0.25em);
 }
 
-.imageOfMarshal img{
-    border: 2px solid black;
+// Image of Marshal
+.imageOfMarshal img {
     border-radius: 20px;
+    max-width: 100%;
 }
-
